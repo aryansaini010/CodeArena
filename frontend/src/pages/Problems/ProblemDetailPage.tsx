@@ -173,9 +173,8 @@ export default function ProblemDetailPage() {
             <div className="mb-6 flex gap-4 border-b border-[var(--border)]">
               {(['description', 'editorial', 'submissions'] as const).map((tab) => (
                 <button key={tab} onClick={() => setActiveTab(tab)}
-                  className={`border-b-2 pb-3 text-sm font-medium capitalize transition ${
-                    activeTab === tab ? 'border-[var(--gradient-start)] text-[var(--text-primary)]' : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text-secondary)]'
-                  }`}>
+                  className={`border-b-2 pb-3 text-sm font-medium capitalize transition ${activeTab === tab ? 'border-[var(--gradient-start)] text-[var(--text-primary)]' : 'border-transparent text-[var(--text-muted)] hover:text-[var(--text-secondary)]'
+                    }`}>
                   {tab}
                 </button>
               ))}
